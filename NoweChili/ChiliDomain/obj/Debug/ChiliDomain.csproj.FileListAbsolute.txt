@@ -1,0 +1,20 @@
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\obj\Debug\ChiliDomain.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\ChiliDomain.dll.config
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\ChiliDomain.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\obj\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\ChiliDomain\obj\Debug\ChiliDomain.pdb
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\ChiliDomain.dll.config
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\ChiliDomain.dll
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\ChiliDomain.pdb
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.dll
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.xml
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\obj\Debug\ChiliDomain.csprojResolveAssemblyReference.cache
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\obj\Debug\ChiliDomain.dll
+D:\Najnowsze hotChili\NoweChili\ChiliDomain\obj\Debug\ChiliDomain.pdb

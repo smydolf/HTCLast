@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoweChili", "NoweChili\NoweChili.csproj", "{9666D4C6-519D-4BF4-942C-48A745BB4101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chili.Domain", "Chili.Domain", "{06E4C680-DC2E-4B5D-966A-2F24A523AA37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiliDomain", "ChiliDomain\ChiliDomain.csproj", "{2F23467F-E247-41ED-843A-D30F67C5E36D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chili.EF", "Chili.EF", "{9356133A-A739-4710-8125-589E2DF3CB63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chili.EF", "ClassLibrary1\Chili.EF.csproj", "{3EB1C5D8-33AE-4EAF-989B-DA2C8C13BD6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChiliService", "ChiliService", "{528E43F9-5C4C-455C-B59B-2AAC2C22681F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiliService", "ChiliService\ChiliService.csproj", "{FABF1E3B-CB8B-4280-8626-AF2A7AE93348}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9666D4C6-519D-4BF4-942C-48A745BB4101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9666D4C6-519D-4BF4-942C-48A745BB4101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9666D4C6-519D-4BF4-942C-48A745BB4101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9666D4C6-519D-4BF4-942C-48A745BB4101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F23467F-E247-41ED-843A-D30F67C5E36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F23467F-E247-41ED-843A-D30F67C5E36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F23467F-E247-41ED-843A-D30F67C5E36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F23467F-E247-41ED-843A-D30F67C5E36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB1C5D8-33AE-4EAF-989B-DA2C8C13BD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB1C5D8-33AE-4EAF-989B-DA2C8C13BD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB1C5D8-33AE-4EAF-989B-DA2C8C13BD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB1C5D8-33AE-4EAF-989B-DA2C8C13BD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABF1E3B-CB8B-4280-8626-AF2A7AE93348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABF1E3B-CB8B-4280-8626-AF2A7AE93348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABF1E3B-CB8B-4280-8626-AF2A7AE93348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABF1E3B-CB8B-4280-8626-AF2A7AE93348}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F23467F-E247-41ED-843A-D30F67C5E36D} = {06E4C680-DC2E-4B5D-966A-2F24A523AA37}
+		{3EB1C5D8-33AE-4EAF-989B-DA2C8C13BD6C} = {9356133A-A739-4710-8125-589E2DF3CB63}
+		{FABF1E3B-CB8B-4280-8626-AF2A7AE93348} = {528E43F9-5C4C-455C-B59B-2AAC2C22681F}
+	EndGlobalSection
+EndGlobal
