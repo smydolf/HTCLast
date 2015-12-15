@@ -11,7 +11,7 @@ namespace ChiliService.Interface
     {
         List<UserDbObject> GetAll();
         UserDbObject GetById(int id);
-        void Update(UserDbObject user);
+        void Update(int Id, UserDbObject Updateuser);
         void Delete(UserDbObject user);
         void DeleteById(int id);
         void AddNew(UserDbObject user);

@@ -30,13 +30,21 @@ namespace ChiliService
             return Context.Set<ProductDbObject>().Find(id);
         }
 
-        public void Update(ProductDbObject product)
+        public void Update(int Id, ProductDbObject updatedProduct)
         {
-            if (product == null)
+            var existingEntityInBase = GetById(Id);
+            if (existingEntityInBase != null)
             {
-                throw new ArgumentNullException(nameof(product));
+                existingEntityInBase.ProductCode = updatedProduct.ProductCode;
+                existingEntityInBase.ProductName = updatedProduct.ProductName;
+                existingEntityInBase.ProductPrice = updatedProduct.ProductPrice;
+                existingEntityInBase.ProductSize = updatedProduct.ProductSize;
+                SaveChange();
             }
-            base.UpdateEntity(product);
+            else
+            {
+               Console.WriteLine("GOWNOOOO");
+            }
         }
 
         public void Delete(ProductDbObject product)

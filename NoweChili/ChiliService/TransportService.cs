@@ -29,13 +29,20 @@ namespace ChiliService
             return Context.Set<TransportDbObject>().Find(id);
         }
 
-        public void Update(TransportDbObject transport)
+        public void Update(int Id,TransportDbObject Updatedtransport)
         {
-            if (transport == null)
+            var existingEntityInBase = GetById(Id);
+            if (existingEntityInBase != null)
             {
-                throw new ArgumentNullException(nameof(transport));
+                existingEntityInBase.TransportName = Updatedtransport.TransportName;
+                existingEntityInBase.TransportPrice = Updatedtransport.TransportPrice;
+               
             }
-            base.UpdateEntity(transport);
+            else
+            {
+                Console.WriteLine("GOWNOOOO");
+
+            }
         }
 
         public void Delete(TransportDbObject transport)

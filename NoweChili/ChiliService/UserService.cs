@@ -29,14 +29,23 @@ namespace ChiliService
             return Context.Set<UserDbObject>().Find(id);
         }
 
-        public void Update(UserDbObject user)
+        public void Update(int Id, UserDbObject Updateuser)
         {
-            if (user == null)
+            var existingEntityInBase = GetById(Id);
+            if (existingEntityInBase != null)
             {
-                throw new ArgumentNullException(nameof(user));
+                existingEntityInBase.UserName = Updateuser.UserName;
+                SaveChange();
+                
+
             }
-            base.UpdateEntity(user);
+            else
+            {
+                Console.WriteLine("GOWNOOOO");
+
+            }
         }
+    
 
         public void Delete(UserDbObject user)
         {

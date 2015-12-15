@@ -29,10 +29,7 @@ namespace ClassLibrary1
             return DbSet.Add(entity) as T;
 
         }
-        public void UpdateEntity(T entity)
-        {
-            DbSet.Attach(entity);
-        }
+      
         public T DeleteEntity(T entity)
         {
 
@@ -49,7 +46,7 @@ namespace ClassLibrary1
             throw new NotImplementedException();//TODO
         }
 
-        public T GetEntity(object primaryKey)
+        public T GetEntityById(int primaryKey)
         {
             return (T)DbSet.Find(primaryKey);
         }

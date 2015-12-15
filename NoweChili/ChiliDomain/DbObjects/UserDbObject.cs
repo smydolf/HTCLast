@@ -10,7 +10,7 @@ namespace ChiliDomain.DbObjects
         [Key]
         public int PrimaryKey { get; set; }
         public string UserName { get; set; }
-        public bool IsAdmin { get; set; }
+        private bool IsAdmin { get; set; }
 
     }
 }

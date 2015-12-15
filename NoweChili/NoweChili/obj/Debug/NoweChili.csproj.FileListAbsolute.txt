@@ -40,3 +40,9 @@ D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ChiliService.pdb
 D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ClassLibrary1.pdb
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\OrderPage.g.cs
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\OrderPage.baml
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminPanel.g.cs
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminPanel.baml
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\GeneralAdminPanel.g.cs
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\GeneralAdminPanel.baml
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AddProductAdminView.g.cs
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AddProductAdminView.baml

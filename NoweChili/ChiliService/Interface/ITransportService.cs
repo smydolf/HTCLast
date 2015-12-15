@@ -11,7 +11,7 @@ namespace ChiliService.Interface
     {
         List<TransportDbObject> GetAll();
         TransportDbObject GetById(int id);
-        void Update(TransportDbObject transport);
+        void Update(int Id, TransportDbObject Updatedtransport);
         void Delete(TransportDbObject transport);
         void DeleteById(int id);
         void AddNew(TransportDbObject transport);

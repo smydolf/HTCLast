@@ -11,7 +11,7 @@ namespace ChiliService.Interface
     {
         List<ProductDbObject> GetAll();
         ProductDbObject GetById(int id);
-        void Update(ProductDbObject product);
+        void Update(int Id, ProductDbObject updatedProduct);
         void Delete(ProductDbObject product);
         void DeleteById(int id);
         void AddNew(ProductDbObject product);
