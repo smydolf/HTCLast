@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoweChili.View"
         mc:Ignorable="d"
-         Background="Cornsilk"
         Title="Dodaj Produkt" Height="600" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/NoweChili;component/Pictures/Pizza.jpg"/>
+    </Window.Background>
     <Grid Margin="7" >
         <Grid.RowDefinitions>
-            
+
             <RowDefinition Height="1*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.2*"/>
@@ -20,7 +22,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
-            
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -28,20 +30,20 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <Label Content="Nazwa produktu" HorizontalAlignment="Left"></Label>
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="#CCD30000" Margin="0,0,0,23">
+            <Label Content="Nazwa produktu" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16"></Label>
             <TextBox x:Name="NameOfProductTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="3">
-            <Label Content="Kod produktu" HorizontalAlignment="Left"></Label>
+        <StackPanel Grid.Column="1" Grid.Row="3" Background="#CCD30000" Margin="0,0,0,24">
+            <Label Content="Kod produktu" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"></Label>
             <TextBox x:Name="ProductCodeTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="5">
-            <Label Content="Rozmiar produktu" HorizontalAlignment="Left"></Label>
+        <StackPanel Grid.Column="1" Grid.Row="5" Background="#CCD30000" Margin="0,0,0,25">
+            <Label Content="Rozmiar produktu" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"></Label>
             <TextBox x:Name="SizeOfProductTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="7">
-            <Label Content="Cena produktu" HorizontalAlignment="Left"></Label>
+        <StackPanel Grid.Column="1" Grid.Row="7" Background="#CCD30000" Margin="0,0,0,25">
+            <Label Content="Cena produktu" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"></Label>
             <TextBox x:Name="PriceOfProductTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
 
@@ -51,13 +53,13 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.05*" />
                 <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
-           <Button x:Name="BackButton" Content="Cofnij" Click="BackButton_OnClick"></Button>
-            <Button x:Name="SubmitAddProduct" Content="Zatwierdź" Grid.Column="2" Background="LightGreen" Click="SubmitAddProduct_OnClick"></Button>
+            <Button Grid.Column="0" Grid.Row="0" x:Name="BackButton" Content="Cofnij" Click="BackButton_OnClick" Margin="0,10" Grid.RowSpan="2"></Button>
+            <Button Grid.Row="0" x:Name="SubmitAddProduct" Content="Zatwierdź" Grid.Column="2" Background="LightGreen" Margin="0,10" Click="SubmitAddProduct_OnClick" Grid.RowSpan="2"></Button>
 
         </Grid>
 
