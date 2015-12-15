@@ -16,7 +16,7 @@ namespace NoweChili.View
         {
            AddProductAdminView addProductAdminView = new AddProductAdminView();
             addProductAdminView.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

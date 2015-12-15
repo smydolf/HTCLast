@@ -9,7 +9,8 @@
         Title="Dodaj Produkt" Height="600" Width="800" ResizeMode="NoResize">
     <Grid Margin="7" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
+            
+            <RowDefinition Height="1*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="*"/>
@@ -17,7 +18,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -34,13 +37,29 @@
             <TextBox x:Name="ProductCodeTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="5">
-            <Label Content="Kod produktu" HorizontalAlignment="Left"></Label>
+            <Label Content="Rozmiar produktu" HorizontalAlignment="Left"></Label>
             <TextBox x:Name="SizeOfProductTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="7">
             <Label Content="Cena produktu" HorizontalAlignment="Left"></Label>
             <TextBox x:Name="PriceOfProductTextBox" Height="Auto" Width="Auto" />
         </StackPanel>
+
+        <Grid Grid.Row="8" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.05*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+           <Button x:Name="BackButton" Content="Cofnij" Click="BackButton_OnClick"></Button>
+            <Button x:Name="SubmitAddProduct" Content="Zatwierdź" Grid.Column="2" Background="LightGreen" Click="SubmitAddProduct_OnClick"></Button>
+
+        </Grid>
 
 
     </Grid>
