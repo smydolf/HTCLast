@@ -46,3 +46,19 @@ D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\GeneralAdminPanel.g.cs
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\GeneralAdminPanel.baml
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AddProductAdminView.g.cs
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AddProductAdminView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\bin\Debug\NoweChili.exe.config
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\NoweChili.exe
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\NoweChili.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\NoweChili.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\AddProductAdminView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\AdminPanel.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\GeneralAdminPanel.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\OrderPage.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\App.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.lref
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\AddProductAdminView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\AdminPanel.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\GeneralAdminPanel.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\View\OrderPage.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLast\NoweChili\NoweChili\obj\Debug\NoweChili.g.resources
