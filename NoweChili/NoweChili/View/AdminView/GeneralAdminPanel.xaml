@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoweChili.View"
         mc:Ignorable="d"
-        Title="Główny Panel Administracyjny" Height="600" Width="800" ResizeMode="NoResize">
+        Title="Główny Panel Administracyjny" Height="600" Width="800" ResizeMode="CanResize">
     <Window.Background>
-        <ImageBrush ImageSource="/NoweChili;component/Pictures/Pizza.jpg"/>
+        <ImageBrush ImageSource="/Pictures/Pizza.jpg"/>
     </Window.Background>
     <Grid Margin="7" >
         <Grid.RowDefinitions>
@@ -27,7 +27,7 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="AddButtonInAdminPanel" Grid.Row="1" Grid.Column="1" Content="Dodaj produkt" Click="AddButtonInAdminPanel_OnClick" OpacityMask="#E5F0C815" Background="#FFE44825" />
-        <Button x:Name="EditProductButtonInAdminPanel" Grid.Row="1" Grid.Column="3" Content="Edytuj produkt" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>
+        <Button x:Name="EditProductButtonInAdminPanel" Grid.Row="1" Grid.Column="3" Content="Edytuj produkt" OpacityMask="#E5F0C815" Background="#FFE44825" Click="EditProductButtonInAdminPanel_OnClick"></Button>
         <Button x:Name="AddUserButtonInAdminPanel" Grid.Row="1" Grid.Column="5" Content="Dodaj użytkownika" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>
         <Button x:Name="EditUserInAdminPanel" Grid.Row="3" Grid.Column="1" Content="Edytuj użytkownika" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>
         <Button x:Name="AddTransportButtonInAdminPanel" Grid.Row="3" Grid.Column="3" Content="Dodaj Dojazd" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>

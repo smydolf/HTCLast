@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using NoweChili.View.AdminView;
 
 namespace NoweChili.View
 {
@@ -16,6 +17,13 @@ namespace NoweChili.View
         {
            AddProductAdminView addProductAdminView = new AddProductAdminView();
             addProductAdminView.Show();
+            this.Close();
+        }
+
+        private void EditProductButtonInAdminPanel_OnClick(object sender, RoutedEventArgs e)
+        {
+           EditProductView editProductView = new EditProductView();
+            editProductView.Show();
             this.Close();
         }
     }

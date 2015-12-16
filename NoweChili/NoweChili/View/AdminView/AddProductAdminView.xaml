@@ -51,16 +51,13 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.05*" />
                 <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
-           <Button x:Name="BackButton" Content="Cofnij" Click="BackButton_OnClick"></Button>
+            <Button x:Name="BackButton" Content="Cofnij" Click="BackButton_OnClick"></Button>
             <Button x:Name="SubmitAddProduct" Content="Zatwierdź" Grid.Column="2" Background="LightGreen" Click="SubmitAddProduct_OnClick"></Button>
-
         </Grid>
-
-
     </Grid>
 </Window>
