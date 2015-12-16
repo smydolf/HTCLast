@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Najnowsze hotChili\NoweChili\NoweChili\App.xaml
-4-88229838
+4-1810237517
 
-8-504390756
-19-1863749738
-View\AddProductAdminView.xaml;View\AdminPanel.xaml;View\GeneralAdminPanel.xaml;View\OrderPage.xaml;
+12-1596844703
+25173650702
+View\AdminView\AddProductAdminView.xaml;View\AdminView\EditProductView.xaml;View\AdminView\GeneralAdminPanel.xaml;View\LoginPanel.xaml;
 
 False
 

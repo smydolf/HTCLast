@@ -19,12 +19,16 @@ namespace NoweChili.View
             addProductAdminView.Show();
             this.Close();
         }
-
         private void EditProductButtonInAdminPanel_OnClick(object sender, RoutedEventArgs e)
         {
            EditProductView editProductView = new EditProductView();
             editProductView.Show();
             this.Close();
+        }
+
+        private void AddUserButtonInAdminPanel_OnClick(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

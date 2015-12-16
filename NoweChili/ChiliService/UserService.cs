@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using ChiliDomain.DbObjects;
@@ -29,6 +30,12 @@ namespace ChiliService
             return Context.Set<UserDbObject>().Find(id);
         }
 
+        public UserDbObject GetUserByName(string name)
+        {
+            if (string.IsNullOrEmpty(name)) throw new ArgumentNullException(nameof(name));
+            return Context.Set<UserDbObject>().FirstOrDefault(o => o.UserName == name);
+        }
+
         public void Update(int Id, UserDbObject Updateuser)
         {
             var existingEntityInBase = GetById(Id);
@@ -36,17 +43,12 @@ namespace ChiliService
             {
                 existingEntityInBase.UserName = Updateuser.UserName;
                 SaveChange();
-                
-
             }
             else
             {
                 Console.WriteLine("GOWNOOOO");
-
             }
         }
-    
-
         public void Delete(UserDbObject user)
         {
             if (user == null)
@@ -54,9 +56,7 @@ namespace ChiliService
                 throw new ArgumentNullException(nameof(user));
             }
             base.DeleteEntity(user);
-
         }
-
         public void DeleteById(int id)
         {
             var toDelete = GetById(id);

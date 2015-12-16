@@ -32,7 +32,17 @@ namespace NoweChili.View.AdminView
         private void ProductEditButton_OnClick(object sender, RoutedEventArgs e)
         {
 
-            throw new NotImplementedException();
+            ProductDbObject editProductDbObject;
+            editProductDbObject = (ProductDbObject) ProductListListView.SelectedItem;
+
+            var addWindows = new AddProductAdminView();
+            addWindows.Show();
+            this.Close();
+            addWindows.NameOfProductTextBox.Text = editProductDbObject.ProductName.ToString();
+            addWindows.ProductCodeTextBox.Text = editProductDbObject.ProductCode.ToString();
+            addWindows.PriceOfProductTextBox.Text = editProductDbObject.ProductPrice.ToString();
+            addWindows.SizeOfProductTextBox.Text = editProductDbObject.ProductSize.ToString();
+            addWindows.productDbObject = editProductDbObject;
 
         }
 
@@ -54,5 +64,13 @@ namespace NoweChili.View.AdminView
 
 
         }
+
+        private void ProductBackButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            var generalAdminPanel = new GeneralAdminPanel();
+            generalAdminPanel.Show();
+            this.Close();
+
+         }
     }
 }

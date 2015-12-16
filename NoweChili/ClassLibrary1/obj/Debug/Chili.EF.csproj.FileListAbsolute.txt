@@ -25,3 +25,5 @@ D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
 D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.InitMigrations.resources
 D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\Chili.EF.csproj.GenerateResource.Cache
 D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.Update.resources
+D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.AddPaswordToUser.resources
+D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.EnableAdmin.resources

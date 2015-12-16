@@ -60,6 +60,14 @@
     <Compile Include="Migrations\201512151051425_Update.Designer.cs">
       <DependentUpon>201512151051425_Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512162111393_AddPaswordToUser.cs" />
+    <Compile Include="Migrations\201512162111393_AddPaswordToUser.Designer.cs">
+      <DependentUpon>201512162111393_AddPaswordToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512162113029_EnableAdmin.cs" />
+    <Compile Include="Migrations\201512162113029_EnableAdmin.Designer.cs">
+      <DependentUpon>201512162113029_EnableAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -80,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512151051425_Update.resx">
       <DependentUpon>201512151051425_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512162111393_AddPaswordToUser.resx">
+      <DependentUpon>201512162111393_AddPaswordToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512162113029_EnableAdmin.resx">
+      <DependentUpon>201512162113029_EnableAdmin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,11 +13,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.1*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name ="ProductListListView"  ItemsSource="{Binding OProductDbObjects}" ></ListView>
-        <Grid Grid.Row="0" Grid.Column="1">
+        <ListView x:Name ="ProductListListView" Grid.Column="0" ItemsSource="{Binding OProductDbObjects}" ></ListView>
+        <Grid Grid.Row="0" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="0.1*"/>
@@ -26,9 +27,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="ProductEditButton" Click="ProductEditButton_OnClick" Content="Edytuj"></Button>
+            <Button x:Name="ProductEditButton" Click="ProductEditButton_OnClick" Content="Edytuj" ></Button>
             <Button x:Name="ProductDeleteButton" Click="ProductDeleteButton_OnClick" Content="Usuń" Grid.Row="2"></Button>
-            <Button x:Name="ProductBackButton"  Content="Cofnij" Grid.Row="4"></Button>
+            <Button x:Name="ProductBackButton"  Content="Cofnij" Grid.Row="4" Click="ProductBackButton_OnClick" ></Button>
         </Grid>
 
     </Grid>

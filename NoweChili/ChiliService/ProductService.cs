@@ -43,7 +43,7 @@ namespace ChiliService
             }
             else
             {
-               Console.WriteLine("GOWNOOOO");
+               Console.WriteLine("GOWNO");
             }
         }
 
