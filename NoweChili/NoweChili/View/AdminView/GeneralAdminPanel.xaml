@@ -30,7 +30,7 @@
         <Button x:Name="EditProductButtonInAdminPanel" Grid.Row="1" Grid.Column="3" Content="Edytuj produkt" OpacityMask="#E5F0C815" Background="#FFE44825" Click="EditProductButtonInAdminPanel_OnClick"></Button>
         <Button x:Name="AddUserButtonInAdminPanel" Grid.Row="1" Grid.Column="5" Content="Dodaj użytkownika" OpacityMask="#E5F0C815" Background="#FFE44825" Click="AddUserButtonInAdminPanel_OnClick"></Button>
         <Button x:Name="EditUserInAdminPanel" Grid.Row="3" Grid.Column="1" Content="Edytuj użytkownika" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>
-        <Button x:Name="AddTransportButtonInAdminPanel" Grid.Row="3" Grid.Column="3" Content="Dodaj Dojazd" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>
-        <Button x:Name="EditTransportInAdminPanel" Grid.Row="3" Grid.Column="5" Content="Edytuj Dojazd" OpacityMask="#E5F0C815" Background="#FFE44825"></Button>
+        <Button x:Name="AddTransportButtonInAdminPanel" Grid.Row="3" Grid.Column="3" Content="Dodaj Dojazd" OpacityMask="#E5F0C815" Background="#FFE44825" Click="AddTransportButtonInAdminPanel_OnClick"></Button>
+        <Button x:Name="EditTransportInAdminPanel" Grid.Row="3" Grid.Column="5" Content="Edytuj Dojazd" OpacityMask="#E5F0C815" Background="#FFE44825" Click="EditTransportInAdminPanel_OnClick"></Button>
     </Grid>
 </Window>

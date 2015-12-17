@@ -11,5 +11,9 @@ namespace ChiliDomain.DbObjects
         public string TransportName { get; set; }
         public decimal TransportPrice { get; set; }
 
+        public override string ToString()
+        {
+            return TransportName + " " + TransportPrice;
+        }
     }
 }
