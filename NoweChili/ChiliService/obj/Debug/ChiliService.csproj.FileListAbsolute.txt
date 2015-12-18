@@ -26,3 +26,17 @@ D:\Najnowsze hotChili\NoweChili\ChiliService\bin\Debug\EntityFramework.SqlServer
 D:\Najnowsze hotChili\NoweChili\ChiliService\obj\Debug\ChiliService.csprojResolveAssemblyReference.cache
 D:\Najnowsze hotChili\NoweChili\ChiliService\obj\Debug\ChiliService.dll
 D:\Najnowsze hotChili\NoweChili\ChiliService\obj\Debug\ChiliService.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ChiliService.dll.config
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ChiliService.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ChiliService.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ClassLibrary1.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\EntityFramework.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ChiliDomain.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\ClassLibrary1.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\EntityFramework.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\obj\Debug\ChiliService.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\obj\Debug\ChiliService.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliService\obj\Debug\ChiliService.pdb

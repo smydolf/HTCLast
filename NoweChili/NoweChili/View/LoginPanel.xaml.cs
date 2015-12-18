@@ -36,11 +36,11 @@ namespace NoweChili.View
       
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            
+
             UserDbObject userDbObject = Services.userService.GetUserByName(Username.Text);
             string password = PasswordBox.Password;
             string Cryptpassword = CryptPassword(password);
-            if (userDbObject!=null)
+            if (userDbObject != null)
             {
                 if (userDbObject.Password == Cryptpassword && userDbObject.IsAdmin)
                 {

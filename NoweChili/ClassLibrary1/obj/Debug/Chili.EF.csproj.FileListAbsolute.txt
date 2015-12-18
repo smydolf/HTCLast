@@ -27,3 +27,15 @@ D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\Chili.EF.csproj.Generate
 D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.Update.resources
 D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.AddPaswordToUser.resources
 D:\Najnowsze hotChili\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.EnableAdmin.resources
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\obj\Debug\Chili.EF.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\ChiliDomain.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml

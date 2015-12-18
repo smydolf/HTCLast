@@ -1,0 +1,9 @@
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\ChiliDomain.dll.config
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\ChiliDomain.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\EntityFramework.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\EntityFramework.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\bin\x86\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\obj\x86\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ChiliDomain\obj\x86\Debug\ChiliDomain.pdb

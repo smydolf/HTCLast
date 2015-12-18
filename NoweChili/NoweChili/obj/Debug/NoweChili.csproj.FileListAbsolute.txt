@@ -58,3 +58,19 @@ D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.Wor
 D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.xml
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\LoginPanel.g.cs
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\LoginPanel.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\NoweChili.exe.config
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.exe
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddProductAdminView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditProductView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\LoginPanel.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\App.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.lref
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddProductAdminView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditProductView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\LoginPanel.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.g.resources
