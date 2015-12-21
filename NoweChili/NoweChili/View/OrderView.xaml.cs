@@ -94,7 +94,7 @@ namespace NoweChili.View
                 int ile = Int32.Parse(AmountTextBox.Text);
 
                 // var product = Services.productService.GetAll();
-                var productByCode = lista.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text));
+                var productByCode = lista.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text)); // = product.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text));
 
                 for (int i = 0; i < ile; i++)
                 {
@@ -106,6 +106,7 @@ namespace NoweChili.View
                 ObliczSume();
                 ProductCodeTextBox.Text = string.Empty;
                 AmountTextBox.Text = string.Empty;
+                
 
 
             }
@@ -200,24 +201,27 @@ namespace NoweChili.View
 
                 OrderModel order = new OrderModel(transportPrice, DateTime.Now, user, ProductList, Suma);
 
-                string title = "Czas zamówienia: " + order.OrderTime.ToLongTimeString() + "\r\n";
+                string title = "Czas zamówienia: " + order.OrderTime.ToLongTimeString();
                 string _user = "Użytkownik: " + "Piotrek"; //order.User.UserName + "\n";
                 string _transport = "Miejscowość: " + order.Transport.TransportName + ", Cena: " +
                                     order.Transport.TransportPrice.ToString() + " zł \r\n";
 
-                string _products = "Produkty: \r\n";
+                string _products = "Produkty: ";
 
 
                 string _total = "Suma: " + Suma.ToString() + " zł\r\n\r\n\r\n";
 
-
+                Directory.CreateDirectory(@"C:\Zamowienia");
                 string filePath = @"C:\Zamowienia\Zamowienia_" + order.OrderTime.ToShortDateString() + ".txt";
+
+                
 
                 if (!File.Exists(filePath))
                 {
                     File.Create(filePath).Dispose();
 
-                    MessageBox.Show("Utworzono plik, zatwierdź jeszcze raz aby zapisać", "Uwaga");
+                    await SaveToFileAndPrint();
+                    //MessageBox.Show("Utworzono plik, zatwierdź jeszcze raz aby zapisać", "Uwaga");
 
 
                 }
@@ -245,7 +249,7 @@ namespace NoweChili.View
                         MessageBox.Show("Zamówienie złożone !", "Informacja");
                     }
 
-                   await Print(order, title, _transport, _products);
+                   //await Print(order, title, _transport, _products);
                 }
 
 
@@ -268,29 +272,34 @@ namespace NoweChili.View
 
         private async Task Print( OrderModel order, string _tytul, string _transport, string _products)
         {
-            PrintDialog printDialog = new PrintDialog();
-
-            string doDruku = string.Empty;
-
-            doDruku += _tytul;
-            doDruku += _transport;
-            doDruku += _products;
-
-            foreach (var VARIABLE in order.ProductList)
+            try
             {
-                doDruku += VARIABLE.ToString() + "\r\n";
+                PrintDialog printDialog = new PrintDialog();
+
+                string doDruku = string.Empty;
+
+                doDruku += _tytul;
+                doDruku += _transport;
+                doDruku += _products;
+
+                foreach (var VARIABLE in order.ProductList)
+                {
+                    doDruku += VARIABLE.ToString() + "\r\n";
+                }
+
+                FlowDocument doc = new FlowDocument(new Paragraph(new Run(doDruku)));
+                doc.Name = "FlowDoc";
+
+                IDocumentPaginatorSource idpSource = doc;
+
+                printDialog.PrintDocument(idpSource.DocumentPaginator, "Zamówienie do druku");
+
+                MessageBox.Show("Drukowanie...", "Drukowanie");
             }
-
-            FlowDocument doc = new FlowDocument(new Paragraph(new Run(doDruku)));
-            doc.Name = "FlowDoc";
-
-            IDocumentPaginatorSource idpSource = doc;
-
-            printDialog.PrintDocument(idpSource.DocumentPaginator, "Zamówienie do druku");
-
-            MessageBox.Show("Drukowanie...", "Drukowanie");
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nie można wydrukować dokumentu \r\n" + ex, "Uwaga!");
+            }
 
 
         }
@@ -299,9 +308,15 @@ namespace NoweChili.View
         {
             
             await SaveToFileAndPrint();
-            
+            ProductList.Clear();
+            ProductListView.ItemsSource = null;
+            Suma = 0;
+            TotalTextBlock.Text = "0 zł";
+        }
 
-
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Wylogowywanie
         }
     }
 }
