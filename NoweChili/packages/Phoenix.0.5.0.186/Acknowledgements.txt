@@ -1,0 +1,12 @@
+Acknowledgements for use of other peoples work
+----------------------------------------------
+
+Guard & DelegateInvoker - Magellan Framework by Paul Stovell
+WPF LoadingAnimation - Brian Lagunas, http://elegantcode.com/2009/08/21/a-simple-wpf-loading-animation/
+Event Aggregator - Jason Jarrett, https://github.com/staxmanade/EventAggregator.Net
+System.Threading.Tasks for Silverlight - http://nuget.org/packages/System.Threading.Tasks
+Little Watson - Andy Pennell, http://blogs.msdn.com/b/andypennell/archive/2010/11/01/error-reporting-on-windows-phone-7.aspx
+				and Jeff Wilcox, https://github.com/jeffwilcox/thejeffwilcox/tree/master/src/Shared/Platform
+
+Silverlight-Serializer - Mike Talbot, https://github.com/whydoidoit/Silverlight-Serializer-v2
+   ** Included as source in Phoenix, as NuGet does not support platform specific dependencies (and Phoenix only needs it for WP7)

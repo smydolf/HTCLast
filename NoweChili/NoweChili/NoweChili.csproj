@@ -87,6 +87,10 @@
       <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Phoenix, Version=0.5.0.186, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Phoenix.0.5.0.186\lib\net40\Phoenix.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -98,6 +102,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Transitionals, Version=1.2.0.0, Culture=neutral, PublicKeyToken=4747a3d6bcb35c80, processorArchitecture=MSIL">
+      <HintPath>..\packages\Phoenix.0.5.0.186\lib\net40\Transitionals.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -112,22 +120,36 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\OrderModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
+    <Compile Include="Models\TransportModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Services.cs" />
     <Compile Include="UserService.cs" />
     <Compile Include="ViewModel\ProductVievModel.cs" />
+    <Compile Include="View\AdminView\AddNewUser.xaml.cs">
+      <DependentUpon>AddNewUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminView\AddProductAdminView.xaml.cs">
       <DependentUpon>AddProductAdminView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AdminView\AddTransportView.xaml.cs">
+      <DependentUpon>AddTransportView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminView\EditProductView.xaml.cs">
       <DependentUpon>EditProductView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminView\EditTransportAdminView.xaml.cs">
+      <DependentUpon>EditTransportAdminView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\AdminView\GeneralAdminPanel.xaml.cs">
       <DependentUpon>GeneralAdminPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\LoginPanel.xaml.cs">
       <DependentUpon>LoginPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OrderView.xaml.cs">
+      <DependentUpon>OrderView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -161,11 +183,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="View\AdminView\AddNewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AdminView\AddProductAdminView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AdminView\AddTransportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AdminView\EditProductView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminView\EditTransportAdminView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -174,6 +208,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\LoginPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\OrderView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -9,7 +9,7 @@ using NoweChili.Annotations;
 
 namespace NoweChili.Models
 {
-    public class ProductModel : ObservableCollection<ProductDbObject>
+    public class ProductModel 
 
     {
         private static List<ProductDbObject> ProductDbObjects { get; set; }

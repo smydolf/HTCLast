@@ -40,3 +40,14 @@ C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\NoweChili.csproj.GenerateResource.Cache
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\NoweChili.exe
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\NoweChili.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\x86\Debug\Phoenix.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\x86\Debug\Transitionals.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\x86\Debug\Phoenix.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\AdminView\AddNewUser.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\AdminView\AddTransportView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\AdminView\EditTransportAdminView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\AdminView\AddNewUser.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\AdminView\AddTransportView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\AdminView\EditTransportAdminView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\OrderView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\x86\Debug\View\OrderView.baml

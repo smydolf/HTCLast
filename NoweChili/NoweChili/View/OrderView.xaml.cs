@@ -1,0 +1,307 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Common;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using ChiliDomain.DbObjects;
+using ChiliService;
+using NoweChili.Models;
+using static System.Windows.MessageBoxImage;
+
+namespace NoweChili.View
+{
+    /// <summary>
+    /// Interaction logic for OrderView.xaml
+    /// </summary>
+    public partial class OrderView : Window
+    {
+        List<ProductDbObject> ProductList = new List<ProductDbObject>();
+        private ProductDbObject pro;
+        List<TransportDbObject> TransportList = new List<TransportDbObject>();
+        private TransportDbObject transportPrice;
+        private UserDbObject user;
+        private decimal Suma;
+          
+        public OrderView()
+        {
+            InitializeComponent();
+            RemoveProductButton.IsEnabled = false;
+            //TransportList = Services.transportService.GetAll(); //Tak powinno być zamiast przykładowych danych
+            
+
+            //Przykładowe dane ***************************************************************************
+            TransportList.Add(new TransportDbObject() {TransportName = "Binarowa", TransportPrice = 8});
+            TransportList.Add(new TransportDbObject() {TransportName = "Racławice", TransportPrice = 18});
+            //*********************************************************************************************
+            TransportComboBox.ItemsSource = TransportList;
+
+            
+        }
+
+        private void ObliczSume()
+        {
+            decimal suma = 0;
+            string total = string.Empty;
+            foreach (var VARIABLE in ProductList)
+            {
+                suma += VARIABLE.ProductPrice;
+            }
+
+            if (transportPrice != null)
+                suma += transportPrice.TransportPrice;
+
+            total = suma.ToString("N2") + " zł";
+            TotalTextBlock.Text = total;
+            Suma = suma;
+        }
+
+        private void AddProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Przykładowe dane *******************************************
+            List<ProductDbObject> lista = new List<ProductDbObject>();
+            ProductDbObject przyklad = new ProductDbObject()
+            {
+                ProductCode = 123456,
+                ProductName = "Margerita", 
+                ProductPrice = Decimal.Parse("69,73"),
+                ProductSize = 32
+
+            };
+            ProductDbObject przyklad2 = new ProductDbObject()
+            {
+                ProductCode = 789,
+                ProductName = "Mammmamia",
+                ProductPrice = Decimal.Parse("21,73"),
+                ProductSize = 32
+
+            };
+
+            lista.Add(przyklad);
+            lista.Add(przyklad2);
+            //**************************************************************
+            try
+            {
+                int ile = Int32.Parse(AmountTextBox.Text);
+
+                // var product = Services.productService.GetAll();
+                var productByCode = lista.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text));
+
+                for (int i = 0; i < ile; i++)
+                {
+                    ProductList.Add(productByCode.First());
+                }
+
+                ProductListView.ItemsSource = null;
+                ProductListView.ItemsSource = ProductList;
+                ObliczSume();
+                ProductCodeTextBox.Text = string.Empty;
+                AmountTextBox.Text = string.Empty;
+
+
+            }
+            catch (ArgumentNullException)
+            {
+                var msg = "Wszystkie pola są wymagane";
+
+                MessageBox.Show(msg, "Uwaga");
+
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Nie znaleziono produktu o podanym kodzie", "Uwaga!");
+            }
+            catch (FormatException)
+            {
+                var msg = "Wszystkie pola są wymagane!\nLub wpisałeś zły format...";
+
+                MessageBox.Show(msg, "Uwaga");
+            }
+            catch (DbException ex)
+            {
+                var msg = "Coś nie tak z bazą danych: \n" + ex;
+
+                MessageBox.Show(msg, "Uwaga");
+            }
+            catch (Exception ex)
+            {
+                var msg = "Coś poszło nie tak:  \n" + ex;
+                MessageBox.Show(msg, "Uwaga!");
+            }
+            
+
+        }
+
+        private void RemoveProductButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ProductList.Remove(pro);
+                ProductListView.ItemsSource = null;
+                ProductListView.ItemsSource = ProductList;
+                ObliczSume();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Coś poszło nie tak: \n" + ex, "Uwaga!");
+            }
+            finally
+            {
+                AddProductButton.IsEnabled = true;
+                RemoveProductButton.IsEnabled = false;
+            }
+            
+        }
+
+        private void ProductListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            RemoveProductButton.IsEnabled = true;
+            AddProductButton.IsEnabled = false;
+            if (e.AddedItems.Count <= 0)
+                return;
+            pro = e.AddedItems[0] as ProductDbObject;
+        }
+
+        private void TransportComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+
+            if(e.AddedItems.Count <=0)
+                return;
+
+            transportPrice = e.AddedItems[0] as TransportDbObject;
+            ObliczSume();
+            
+        }
+
+        private void AmountTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(AmountTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Proszę wpisywać liczby", "Uwaga!");
+                AmountTextBox.Text = AmountTextBox.Text.Remove(AmountTextBox.Text.Length -1);
+            }
+        }
+
+        private async Task SaveToFileAndPrint()
+        {
+            try
+            {
+
+                OrderModel order = new OrderModel(transportPrice, DateTime.Now, user, ProductList, Suma);
+
+                string title = "Czas zamówienia: " + order.OrderTime.ToLongTimeString() + "\r\n";
+                string _user = "Użytkownik: " + "Piotrek"; //order.User.UserName + "\n";
+                string _transport = "Miejscowość: " + order.Transport.TransportName + ", Cena: " +
+                                    order.Transport.TransportPrice.ToString() + " zł \r\n";
+
+                string _products = "Produkty: \r\n";
+
+
+                string _total = "Suma: " + Suma.ToString() + " zł\r\n\r\n\r\n";
+
+
+                string filePath = @"C:\Zamowienia\Zamowienia_" + order.OrderTime.ToShortDateString() + ".txt";
+
+                if (!File.Exists(filePath))
+                {
+                    File.Create(filePath).Dispose();
+
+                    MessageBox.Show("Utworzono plik, zatwierdź jeszcze raz aby zapisać", "Uwaga");
+
+
+                }
+                else
+                {
+                    using (StreamWriter file = new StreamWriter(filePath, true))
+                    {
+                        await file.WriteLineAsync(title);
+                        await file.WriteLineAsync(_user);
+                        await file.WriteLineAsync(_transport);
+                        await file.WriteLineAsync(_products);
+
+                        foreach (var VARIABLE in ProductList)
+                        {
+                            await file.WriteLineAsync(VARIABLE.ToString());
+                        }
+
+
+                        await file.WriteLineAsync(_total);
+                        await file.WriteLineAsync("\n");
+                        await file.WriteLineAsync("\n");
+                        await file.WriteLineAsync("\n");
+
+                        file.Close();
+                        MessageBox.Show("Zamówienie złożone !", "Informacja");
+                    }
+
+                   await Print(order, title, _transport, _products);
+                }
+
+
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Nie znaleziono pliku", "Uwaga!");
+            }
+            catch (FileFormatException)
+            {
+                MessageBox.Show("Zły format pliku!", "Uwaga");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+            
+        }
+
+        private async Task Print( OrderModel order, string _tytul, string _transport, string _products)
+        {
+            PrintDialog printDialog = new PrintDialog();
+
+            string doDruku = string.Empty;
+
+            doDruku += _tytul;
+            doDruku += _transport;
+            doDruku += _products;
+
+            foreach (var VARIABLE in order.ProductList)
+            {
+                doDruku += VARIABLE.ToString() + "\r\n";
+            }
+
+            FlowDocument doc = new FlowDocument(new Paragraph(new Run(doDruku)));
+            doc.Name = "FlowDoc";
+
+            IDocumentPaginatorSource idpSource = doc;
+
+            printDialog.PrintDocument(idpSource.DocumentPaginator, "Zamówienie do druku");
+
+            MessageBox.Show("Drukowanie...", "Drukowanie");
+
+
+
+
+        }
+
+        private async void SubmitOrderButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            await SaveToFileAndPrint();
+            
+
+
+        }
+    }
+}

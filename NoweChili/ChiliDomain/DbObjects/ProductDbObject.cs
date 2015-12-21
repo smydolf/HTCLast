@@ -16,7 +16,7 @@ namespace ChiliDomain.DbObjects
         public int PrimaryKey { get; set; }
         public override string ToString()
         {
-            return PrimaryKey + " " + ProductName + " " + ProductSize + " " + ProductPrice;
+            return "Kod: " + ProductCode + " " + ProductName + ", " + " Rozmiar: " + ProductSize + ", " + ProductPrice + " zł";
         }
     }
 }

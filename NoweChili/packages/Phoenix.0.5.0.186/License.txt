@@ -1,0 +1,3 @@
+﻿Microsoft Public License (Ms-PL)
+
+http://nuget.org/packages/System.Threading.Tasks (Included for WP7, until NuGet supports platform targeted dependencies) - Microsoft Public License (Ms-PL)

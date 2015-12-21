@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Navigation;
 using ChiliDomain.DbObjects;
-using ChiliService;
-using ClassLibrary1;
 using NoweChili.View.AdminView;
 
 namespace NoweChili.View
@@ -16,32 +15,34 @@ namespace NoweChili.View
         {
             InitializeComponent();
         }
-
-        public ProductDbObject productDbObject = null;
+        #region ObjectInit
+        public ProductDbObject ProductDbObject = null;
         public TransportDbObject TransportDbObject = null;
         public UserDbObject UserDbObject = null;
+         #endregion
         public void CreateOrUpdateProduct()
         {
+            
 
-            if (productDbObject == null)
+            if (ProductDbObject == null)
             {
-                productDbObject = new ProductDbObject()
+                var newProductDbObject = new ProductDbObject()
                 {
                     ProductName = Convert.ToString(NameOfProductTextBox.Text),
                     ProductPrice = Convert.ToDecimal(PriceOfProductTextBox.Text),
                     ProductCode = Convert.ToInt16(ProductCodeTextBox.Text),
                     ProductSize = Convert.ToInt16(SizeOfProductTextBox.Text)
                 };
-                Services.productService.AddNew(productDbObject);
+                Services.productService.AddNew(newProductDbObject);
                 Services.productService.SaveChange();
             }
             else
             {
-                productDbObject.ProductName = Convert.ToString(NameOfProductTextBox.Text);
-                productDbObject.ProductPrice = Convert.ToDecimal(PriceOfProductTextBox.Text);
-                productDbObject.ProductCode = Convert.ToInt16(ProductCodeTextBox.Text);
-                productDbObject.ProductSize = Convert.ToInt16(SizeOfProductTextBox.Text);
-                Services.productService.Update(productDbObject.PrimaryKey, productDbObject);
+                ProductDbObject.ProductName = Convert.ToString(NameOfProductTextBox.Text);
+                ProductDbObject.ProductPrice = Convert.ToDecimal(PriceOfProductTextBox.Text);
+                ProductDbObject.ProductCode = Convert.ToInt16(ProductCodeTextBox.Text);
+                ProductDbObject.ProductSize = Convert.ToInt16(SizeOfProductTextBox.Text);
+                Services.productService.Update(ProductDbObject.PrimaryKey, ProductDbObject);
                 var newEditingWindows = new EditProductView();
                 newEditingWindows.Show();
                 this.Close();

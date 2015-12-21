@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 ﻿C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
 
 FC:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\View\AdminView\AddProductAdminView.xaml;;
 FC:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\View\AdminView\EditProductView.xaml;;
 FC:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\View\AdminView\GeneralAdminPanel.xaml;;
 FC:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\View\LoginPanel.xaml;;
+=======
+﻿D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
+
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\AdminView\AddNewUser.xaml;;
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\AdminView\AddProductAdminView.xaml;;
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\AdminView\AddTransportView.xaml;;
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\AdminView\EditProductView.xaml;;
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\AdminView\EditTransportAdminView.xaml;;
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\AdminView\GeneralAdminPanel.xaml;;
+FD:\Najnowsze hotChili\NoweChili\NoweChili\View\LoginPanel.xaml;;
+>>>>>>> bb6c7304c7f07e1a4ac47936017e9324d729efee
 

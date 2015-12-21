@@ -58,6 +58,7 @@ D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.Wor
 D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.xml
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\LoginPanel.g.cs
 D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\LoginPanel.baml
+<<<<<<< HEAD
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\NoweChili.exe.config
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.exe
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.pdb
@@ -74,3 +75,20 @@ C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\LoginPanel.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.g.resources
+=======
+D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Phoenix.dll
+D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Transitionals.dll
+D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Phoenix.pdb
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.g.cs
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.baml
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.g.cs
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.g.cs
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.baml
+D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.baml
+>>>>>>> bb6c7304c7f07e1a4ac47936017e9324d729efee
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.baml
