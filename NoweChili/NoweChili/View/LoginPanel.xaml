@@ -28,6 +28,6 @@
         <Grid Grid.Row="5" Grid.Column="1">
             <Button x:Name="Login" Content="Zaloguj" Background="MediumSpringGreen" Click="Login_Click" ></Button>
         </Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="120,106,0,0" Grid.Row="6" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+       
     </Grid>
 </Window>

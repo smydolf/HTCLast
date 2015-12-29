@@ -1,31 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 using ChiliDomain.DbObjects;
 
 namespace NoweChili.Models
-{
+{ 
+
+
     public class OrderModel
     {
+        [XmlElement("Transport")]
         public TransportDbObject Transport { get; set; }
+        [XmlElement("DataZamówienia")]
         public DateTime OrderTime { get; set; }
-        public UserDbObject User { get; set; }
+        [XmlElement("Użytkownik")]
+        public LoggedUser User { get; set; }
+        [XmlElement("Produkty")]
         public List<ProductDbObject> ProductList { get; set; }
-        public static decimal Total { get; set; } = 0;
+        [XmlElement("Suma")]
+        public  decimal Total { get; set; } = 0;
 
-        public OrderModel( TransportDbObject _transport, DateTime _orderTime, UserDbObject _user, List<ProductDbObject> _productList, decimal _total)
+        public OrderModel()
+        {           
+        }
+        public OrderModel( TransportDbObject _transport, DateTime _orderTime, LoggedUser _user, List<ProductDbObject> _productList, decimal _total)
         {
             Transport = _transport;
             OrderTime = _orderTime;
             User = _user;
             ProductList = _productList;
             Total = _total;
-
-
         }
 
-        
+
+
+        //Srednio to działa :D
+
+        //public string ViewList()
+        //{
+        //    string c = null;
+        //    foreach (var variable in ProductList)
+        //    {
+        //        c = variable.ProductName;
+
+        //    }
+        //    return c;
+        //}
+        //public override string ToString()
+        //{
+        //    return OrderTime.Date + " " + ViewList() + " " + Total;
+        //}
     }
 }

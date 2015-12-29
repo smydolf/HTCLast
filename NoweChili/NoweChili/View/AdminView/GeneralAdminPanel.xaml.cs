@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using NoweChili.Models;
 using NoweChili.View.AdminView;
 
 namespace NoweChili.View
@@ -8,6 +9,7 @@ namespace NoweChili.View
     /// </summary>
     public partial class GeneralAdminPanel : Window
     {
+        public LoggedUser user;
         public GeneralAdminPanel()
         {
             InitializeComponent();
@@ -15,13 +17,13 @@ namespace NoweChili.View
 
         private void AddButtonInAdminPanel_OnClick(object sender, RoutedEventArgs e)
         {
-           AddProductAdminView addProductAdminView = new AddProductAdminView();
+            AddProductAdminView addProductAdminView = new AddProductAdminView();
             addProductAdminView.Show();
             this.Close();
         }
         private void EditProductButtonInAdminPanel_OnClick(object sender, RoutedEventArgs e)
         {
-           EditProductView editProductView = new EditProductView();
+            EditProductView editProductView = new EditProductView();
             editProductView.Show();
             this.Close();
         }
@@ -35,7 +37,7 @@ namespace NoweChili.View
 
         private void AddTransportButtonInAdminPanel_OnClick(object sender, RoutedEventArgs e)
         {
-           AddTransportView addTransport = new AddTransportView();
+            AddTransportView addTransport = new AddTransportView();
             addTransport.Show();
             this.Close();
         }
@@ -47,10 +49,16 @@ namespace NoweChili.View
             this.Close();
         }
 
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            OrderView orderView = new OrderView();
-            orderView.Show();
+            user.Logout(this);
+        }
+
+        private void OrderEditInAdminPanel_OnClick(object sender, RoutedEventArgs e)
+        {
+            EditOrderView editOrderView = new EditOrderView();
+            editOrderView.Show();
             this.Close();
         }
     }

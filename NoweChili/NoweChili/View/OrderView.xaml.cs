@@ -3,20 +3,13 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using ChiliDomain.DbObjects;
-using ChiliService;
 using NoweChili.Models;
-using static System.Windows.MessageBoxImage;
+using NoweChili.DeAndSerialization;
 
 namespace NoweChili.View
 {
@@ -29,23 +22,18 @@ namespace NoweChili.View
         private ProductDbObject pro;
         List<TransportDbObject> TransportList = new List<TransportDbObject>();
         private TransportDbObject transportPrice;
-        private UserDbObject user;
+        public LoggedUser user;
         private decimal Suma;
-          
+        Serialization serialization = new Serialization();
+
+
+
         public OrderView()
         {
             InitializeComponent();
             RemoveProductButton.IsEnabled = false;
-            //TransportList = Services.transportService.GetAll(); //Tak powinno być zamiast przykładowych danych
-            
-
-            //Przykładowe dane ***************************************************************************
-            TransportList.Add(new TransportDbObject() {TransportName = "Binarowa", TransportPrice = 8});
-            TransportList.Add(new TransportDbObject() {TransportName = "Racławice", TransportPrice = 18});
-            //*********************************************************************************************
+            TransportList = Services.transportService.GetAll(); //Tak powinno być zamiast przykładowych danych
             TransportComboBox.ItemsSource = TransportList;
-
-            
         }
 
         private void ObliczSume()
@@ -67,34 +55,12 @@ namespace NoweChili.View
 
         private void AddProductButton_Click(object sender, RoutedEventArgs e)
         {
-            //Przykładowe dane *******************************************
-            List<ProductDbObject> lista = new List<ProductDbObject>();
-            ProductDbObject przyklad = new ProductDbObject()
-            {
-                ProductCode = 123456,
-                ProductName = "Margerita", 
-                ProductPrice = Decimal.Parse("69,73"),
-                ProductSize = 32
-
-            };
-            ProductDbObject przyklad2 = new ProductDbObject()
-            {
-                ProductCode = 789,
-                ProductName = "Mammmamia",
-                ProductPrice = Decimal.Parse("21,73"),
-                ProductSize = 32
-
-            };
-
-            lista.Add(przyklad);
-            lista.Add(przyklad2);
-            //**************************************************************
             try
             {
                 int ile = Int32.Parse(AmountTextBox.Text);
 
-                // var product = Services.productService.GetAll();
-                var productByCode = lista.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text)); // = product.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text));
+                var product = Services.productService.GetAll();
+                var productByCode = product.Where(c => c.ProductCode == Int32.Parse(ProductCodeTextBox.Text));
 
                 for (int i = 0; i < ile; i++)
                 {
@@ -106,16 +72,12 @@ namespace NoweChili.View
                 ObliczSume();
                 ProductCodeTextBox.Text = string.Empty;
                 AmountTextBox.Text = string.Empty;
-                
-
-
             }
             catch (ArgumentNullException)
             {
                 var msg = "Wszystkie pola są wymagane";
 
                 MessageBox.Show(msg, "Uwaga");
-
             }
             catch (InvalidOperationException)
             {
@@ -138,7 +100,7 @@ namespace NoweChili.View
                 var msg = "Coś poszło nie tak:  \n" + ex;
                 MessageBox.Show(msg, "Uwaga!");
             }
-            
+
 
         }
 
@@ -161,7 +123,7 @@ namespace NoweChili.View
                 AddProductButton.IsEnabled = true;
                 RemoveProductButton.IsEnabled = false;
             }
-            
+
         }
 
         private void ProductListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -175,14 +137,14 @@ namespace NoweChili.View
 
         private void TransportComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
 
-            if(e.AddedItems.Count <=0)
+
+            if (e.AddedItems.Count <= 0)
                 return;
 
             transportPrice = e.AddedItems[0] as TransportDbObject;
             ObliczSume();
-            
+
         }
 
         private void AmountTextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -190,7 +152,7 @@ namespace NoweChili.View
             if (System.Text.RegularExpressions.Regex.IsMatch(AmountTextBox.Text, "[^0-9]"))
             {
                 MessageBox.Show("Proszę wpisywać liczby", "Uwaga!");
-                AmountTextBox.Text = AmountTextBox.Text.Remove(AmountTextBox.Text.Length -1);
+                AmountTextBox.Text = AmountTextBox.Text.Remove(AmountTextBox.Text.Length - 1);
             }
         }
 
@@ -201,8 +163,9 @@ namespace NoweChili.View
 
                 OrderModel order = new OrderModel(transportPrice, DateTime.Now, user, ProductList, Suma);
 
+
                 string title = "Czas zamówienia: " + order.OrderTime.ToLongTimeString();
-                string _user = "Użytkownik: " + "Piotrek"; //order.User.UserName + "\n";
+                string _user = "Użytkownik: " + order.User.loggedDbUserName + "\n";
                 string _transport = "Miejscowość: " + order.Transport.TransportName + ", Cena: " +
                                     order.Transport.TransportPrice.ToString() + " zł \r\n";
 
@@ -214,14 +177,15 @@ namespace NoweChili.View
                 Directory.CreateDirectory(@"C:\Zamowienia");
                 string filePath = @"C:\Zamowienia\Zamowienia_" + order.OrderTime.ToShortDateString() + ".txt";
 
-                
-
+                serialization.OrderSerialization(order);
+              
                 if (!File.Exists(filePath))
                 {
                     File.Create(filePath).Dispose();
 
                     await SaveToFileAndPrint();
-                    //MessageBox.Show("Utworzono plik, zatwierdź jeszcze raz aby zapisać", "Uwaga");
+                    MessageBox.Show("Utworzono plik, zatwierdź jeszcze raz aby zapisać", "Uwaga");
+
 
 
                 }
@@ -249,7 +213,7 @@ namespace NoweChili.View
                         MessageBox.Show("Zamówienie złożone !", "Informacja");
                     }
 
-                   //await Print(order, title, _transport, _products);
+                    //await Print(order, title, _transport, _products);
                 }
 
 
@@ -267,10 +231,11 @@ namespace NoweChili.View
 
                 MessageBox.Show(ex.ToString());
             }
-            
+
+
         }
 
-        private async Task Print( OrderModel order, string _tytul, string _transport, string _products)
+        private async Task Print(OrderModel order, string _tytul, string _transport, string _products)
         {
             try
             {
@@ -306,17 +271,20 @@ namespace NoweChili.View
 
         private async void SubmitOrderButton_Click(object sender, RoutedEventArgs e)
         {
-            
+
             await SaveToFileAndPrint();
             ProductList.Clear();
             ProductListView.ItemsSource = null;
             Suma = 0;
             TotalTextBlock.Text = "0 zł";
+            Serialization serialization = new Serialization();
+            List<OrderModel> orderModels = new List<OrderModel>();
+
         }
 
         private void LogOutButton_Click(object sender, RoutedEventArgs e)
         {
-            //Wylogowywanie
+            user.Logout(this);
         }
     }
 }

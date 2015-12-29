@@ -3,6 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
 using ChiliDomain.DbObjects;
+using NoweChili.Models;
 
 namespace NoweChili.View
 {
@@ -11,19 +12,17 @@ namespace NoweChili.View
     /// </summary>
     public partial class LoginPanel : Window
     {
+            
         public LoginPanel()
         {
             InitializeComponent();
         }
-
         private string CryptPassword(string text)
         {
             SHA1Managed sha1 = new SHA1Managed();
             byte[] bytes = sha1.ComputeHash(new UnicodeEncoding().GetBytes(text));
             return Convert.ToBase64String(bytes);
-        }
-
-      
+        }     
         private void Login_Click(object sender, RoutedEventArgs e)
         {
 
@@ -36,24 +35,19 @@ namespace NoweChili.View
                 {
                     var generalAdminPanel = new GeneralAdminPanel();
                     generalAdminPanel.Show();
+                    generalAdminPanel.user = new LoggedUser(userDbObject, DateTime.Now);
                     this.Close();
+                    
+                }
+                else
+                {
+                    var OrderViewPanel = new OrderView();
+                    OrderViewPanel.Show();
+                    OrderViewPanel.user = new LoggedUser(userDbObject, DateTime.Now);
+                    this.Close();   
                 }
             }
-            else
-            {
-                MessageBox.Show("Wypierdalaj");
-            }
-
-
-
-
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            OrderView order = new OrderView();
-            order.Show();
-            this.Close();
+         
         }
     }
 }
