@@ -74,6 +74,10 @@
   <ItemGroup>
     <Compile Include="HtcAplicationContext.cs" />
     <Compile Include="Interface\Irepository.cs" />
+    <Compile Include="Migrations\201512302116055_MojaMigracja.cs" />
+    <Compile Include="Migrations\201512302116055_MojaMigracja.Designer.cs">
+      <DependentUpon>201512302116055_MojaMigracja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -87,6 +91,11 @@
       <Project>{2F23467F-E247-41ED-843A-D30F67C5E36D}</Project>
       <Name>ChiliDomain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512302116055_MojaMigracja.resx">
+      <DependentUpon>201512302116055_MojaMigracja.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

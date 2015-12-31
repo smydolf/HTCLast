@@ -15,8 +15,13 @@ namespace NoweChili.Models
         public DateTime OrderTime { get; set; }
         [XmlElement("Użytkownik")]
         public LoggedUser User { get; set; }
+        [XmlElement("Pudełka")]
+        public List<BoxDbObject> Boxes { get; set; }
         [XmlElement("Produkty")]
         public List<ProductDbObject> ProductList { get; set; }
+        [XmlElement("Uwagi")]
+        public string Comments { get; set; }
+
         [XmlElement("Suma")]
         public  decimal Total { get; set; } = 0;
 

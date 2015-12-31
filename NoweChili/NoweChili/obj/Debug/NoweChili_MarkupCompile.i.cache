@@ -9,21 +9,12 @@ NoweChili
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\App.xaml
-4-1810237517
+9-193061299
 
-16-1064420909
-25596114755
-View\AdminView\AddProductAdminView.xaml;View\AdminView\EditProductView.xaml;View\AdminView\GeneralAdminPanel.xaml;View\LoginPanel.xaml;
-=======
-D:\Najnowsze hotChili\NoweChili\NoweChili\App.xaml
-7796506432
-
-20-38459218
-271991166958
-View\AdminView\AddNewUser.xaml;View\AdminView\AddProductAdminView.xaml;View\AdminView\AddTransportView.xaml;View\AdminView\EditProductView.xaml;View\AdminView\EditTransportAdminView.xaml;View\AdminView\GeneralAdminPanel.xaml;View\LoginPanel.xaml;
->>>>>>> bb6c7304c7f07e1a4ac47936017e9324d729efee
+26-1524210972
+27334824148
+View\AdminView\AddNewUser.xaml;View\AdminView\AddProductAdminView.xaml;View\AdminView\AddTransportView.xaml;View\AdminView\EditOrderView.xaml;View\AdminView\EditProductView.xaml;View\AdminView\EditTransportAdminView.xaml;View\AdminView\GeneralAdminPanel.xaml;View\LoginPanel.xaml;View\OrderView.xaml;
 
 True
 

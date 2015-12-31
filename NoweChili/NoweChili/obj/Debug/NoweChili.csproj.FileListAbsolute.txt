@@ -1,94 +1,55 @@
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\NoweChili.exe.config
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\NoweChili.exe
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\NoweChili.pdb
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\EntityFramework.dll
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\EntityFramework.xml
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili.csprojResolveAssemblyReference.cache
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\MainWindow.g.cs
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\App.g.cs
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.cache
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.lref
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\MainWindow.baml
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili.g.resources
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili.Properties.Resources.resources
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili.csproj.GenerateResource.Cache
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili.exe
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\Chili\NoweChili\NoweChili\obj\Debug\NoweChili.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\NoweChili.exe.config
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili.exe
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\NoweChili.exe
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\NoweChili.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\EntityFramework.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\EntityFramework.SqlServer.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\EntityFramework.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\EntityFramework.SqlServer.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili.csprojResolveAssemblyReference.cache
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\App.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.cache
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.lref
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili.g.resources
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili.Properties.Resources.resources
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\NoweChili.csproj.GenerateResource.Cache
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ChiliDomain.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ChiliService.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ClassLibrary1.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ChiliDomain.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ChiliService.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\ClassLibrary1.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddProductAdminView.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\EditProductView.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddProductAdminView.baml
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\EditProductView.baml
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.baml
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.Controls.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.DeleteTeamProject.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.ProjectManagement.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.VersionControl.Controls.Common.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Controls.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.mshtml.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.Controls.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.DeleteTeamProject.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.ProjectManagement.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Controls.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.xml
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\LoginPanel.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\LoginPanel.baml
-<<<<<<< HEAD
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\NoweChili.exe.config
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.exe
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\NoweChili.exe
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\NoweChili.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\ChiliDomain.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\ChiliService.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\ClassLibrary1.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\EntityFramework.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.Controls.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.DeleteTeamProject.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.ProjectManagement.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.VersionControl.Controls.Common.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Controls.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Phoenix.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Transitionals.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.mshtml.dll
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\ChiliDomain.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\ChiliService.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\ClassLibrary1.pdb
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\EntityFramework.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.Controls.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.DeleteTeamProject.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.ProjectManagement.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Controls.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\bin\Debug\Phoenix.pdb
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.g.cs
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddProductAdminView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditOrderView.g.cs
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditProductView.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.g.cs
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.g.cs
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\LoginPanel.g.cs
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\OrderView.g.cs
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\App.g.cs
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.cache
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili_MarkupCompile.lref
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddProductAdminView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditOrderView.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditProductView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\GeneralAdminPanel.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\LoginPanel.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\OrderView.baml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.g.resources
-=======
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Phoenix.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Transitionals.dll
-D:\Najnowsze hotChili\NoweChili\NoweChili\bin\Debug\Phoenix.pdb
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.baml
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.g.cs
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.baml
-D:\Najnowsze hotChili\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.baml
->>>>>>> bb6c7304c7f07e1a4ac47936017e9324d729efee
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.g.cs
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.g.cs
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.g.cs
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddNewUser.baml
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\AddTransportView.baml
-C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\View\AdminView\EditTransportAdminView.baml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.Properties.Resources.resources
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.csproj.GenerateResource.Cache
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.exe
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\obj\Debug\NoweChili.pdb

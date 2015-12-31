@@ -52,7 +52,9 @@ namespace NoweChili.View
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            user.Logout(this);
+            //user.Logout(this);
+            OrderView orderView = new OrderView();
+            orderView.Show();
         }
 
         private void OrderEditInAdminPanel_OnClick(object sender, RoutedEventArgs e)

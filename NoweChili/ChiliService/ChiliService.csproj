@@ -67,6 +67,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoxService.cs" />
+    <Compile Include="Interface\IBoxService.cs" />
     <Compile Include="Interface\IProductService.cs" />
     <Compile Include="Interface\ITransportService.cs" />
     <Compile Include="Interface\IUserService.cs" />

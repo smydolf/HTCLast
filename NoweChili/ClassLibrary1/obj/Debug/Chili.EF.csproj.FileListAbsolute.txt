@@ -39,3 +39,5 @@ C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibr
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\ChiliDomain.pdb
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\EntityFramework.xml
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\obj\Debug\ClassLibrary1.Migrations.MojaMigracja.resources
+C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\ClassLibrary1\obj\Debug\Chili.EF.csproj.GenerateResource.Cache

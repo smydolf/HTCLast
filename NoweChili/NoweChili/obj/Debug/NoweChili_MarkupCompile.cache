@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Piotr\Documents\Visual Studio 2015\Projects\HTCLAST\NoweChili\NoweChili\App.xaml
-7796506432
+9-193061299
 
-17-702810900
+22-2056634766
 27334824148
-View\AdminView\AddNewUser.xaml;View\AdminView\AddProductAdminView.xaml;View\AdminView\AddTransportView.xaml;View\AdminView\EditProductView.xaml;View\AdminView\EditTransportAdminView.xaml;View\AdminView\GeneralAdminPanel.xaml;View\LoginPanel.xaml;
+View\AdminView\AddNewUser.xaml;View\AdminView\AddProductAdminView.xaml;View\AdminView\AddTransportView.xaml;View\AdminView\EditOrderView.xaml;View\AdminView\EditProductView.xaml;View\AdminView\EditTransportAdminView.xaml;View\AdminView\GeneralAdminPanel.xaml;View\LoginPanel.xaml;View\OrderView.xaml;
 
 False
 

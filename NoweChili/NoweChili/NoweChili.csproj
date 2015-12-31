@@ -120,13 +120,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DeAndSerialization\Serialization.cs" />
+    <Compile Include="Models\LoggedUser.cs" />
+    <Compile Include="Models\OrderEditByAdmin.cs" />
     <Compile Include="Models\OrderModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\TransportModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Services.cs" />
     <Compile Include="UserService.cs" />
-    <Compile Include="ViewModel\ProductVievModel.cs" />
     <Compile Include="View\AdminView\AddNewUser.xaml.cs">
       <DependentUpon>AddNewUser.xaml</DependentUpon>
     </Compile>
@@ -135,6 +137,9 @@
     </Compile>
     <Compile Include="View\AdminView\AddTransportView.xaml.cs">
       <DependentUpon>AddTransportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminView\EditOrderView.xaml.cs">
+      <DependentUpon>EditOrderView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\AdminView\EditProductView.xaml.cs">
       <DependentUpon>EditProductView.xaml</DependentUpon>
@@ -194,6 +199,10 @@
     <Page Include="View\AdminView\AddTransportView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminView\EditOrderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\AdminView\EditProductView.xaml">
       <SubType>Designer</SubType>

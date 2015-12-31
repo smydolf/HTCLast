@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbObjects\BoxesDbObject.cs" />
     <Compile Include="DbObjects\Interface\IEntity.cs" />
     <Compile Include="DbObjects\ProductDbObject.cs" />
     <Compile Include="DbObjects\TransportDbObject.cs" />
