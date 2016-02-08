@@ -10,6 +10,7 @@ namespace NoweChili
         public static ProductService productService = new ProductService(htcAplicationContext);
         public static UserService userService = new UserService(htcAplicationContext);
         public static TransportService transportService = new TransportService(htcAplicationContext);
+        public static BoxService boxService = new BoxService(htcAplicationContext);
 
     }
 }

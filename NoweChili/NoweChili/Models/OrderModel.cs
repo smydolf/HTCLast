@@ -28,7 +28,7 @@ namespace NoweChili.Models
         public OrderModel()
         {           
         }
-        public OrderModel( TransportDbObject _transport, DateTime _orderTime, LoggedUser _user, List<ProductDbObject> _productList, decimal _total)
+        public OrderModel( TransportDbObject _transport, DateTime _orderTime, LoggedUser _user, List<ProductDbObject> _productList, List<BoxDbObject> _boxList, decimal _total)
         {
             Transport = _transport;
             OrderTime = _orderTime;

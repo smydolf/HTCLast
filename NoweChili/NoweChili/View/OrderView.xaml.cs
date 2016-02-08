@@ -25,6 +25,11 @@ namespace NoweChili.View
         public LoggedUser user;
         private decimal Suma;
         Serialization serialization = new Serialization();
+        //Pudełka
+        List<BoxDbObject> BoxList = new List<BoxDbObject>();
+        List<BoxDbObject> BoxComboList = new List<BoxDbObject>();
+        private BoxDbObject box;
+        //**************************************************
 
 
 
@@ -32,8 +37,11 @@ namespace NoweChili.View
         {
             InitializeComponent();
             RemoveProductButton.IsEnabled = false;
+            RemoveBoxButton.IsEnabled = false;
             TransportList = Services.transportService.GetAll(); //Tak powinno być zamiast przykładowych danych
             TransportComboBox.ItemsSource = TransportList;
+            BoxComboList = Services.boxService.GetAll();
+            BoxesComboBox.ItemsSource = BoxComboList;
         }
 
         private void ObliczSume()
@@ -43,6 +51,11 @@ namespace NoweChili.View
             foreach (var VARIABLE in ProductList)
             {
                 suma += VARIABLE.ProductPrice;
+            }
+
+            foreach (var VARIABLE in BoxList)
+            {
+                suma += VARIABLE.BoxPrice;
             }
 
             if (transportPrice != null)
@@ -161,7 +174,7 @@ namespace NoweChili.View
             try
             {
 
-                OrderModel order = new OrderModel(transportPrice, DateTime.Now, user, ProductList, Suma);
+                OrderModel order = new OrderModel(transportPrice, DateTime.Now, user, ProductList, BoxList, Suma);
 
 
                 string title = "Czas zamówienia: " + order.OrderTime.ToLongTimeString();
@@ -170,6 +183,7 @@ namespace NoweChili.View
                                     order.Transport.TransportPrice.ToString() + " zł \r\n";
 
                 string _products = "Produkty: ";
+                string _boxes = "Opakowania: ";
 
 
                 string _total = "Suma: " + Suma.ToString() + " zł\r\n\r\n\r\n";
@@ -203,6 +217,11 @@ namespace NoweChili.View
                             await file.WriteLineAsync(VARIABLE.ToString());
                         }
 
+                        foreach (var VARIABLE in BoxList)
+                        {
+                            await file.WriteLineAsync(VARIABLE.ToString());
+                        }
+
 
                         await file.WriteLineAsync(_total);
                         await file.WriteLineAsync("\n");
@@ -213,7 +232,7 @@ namespace NoweChili.View
                         MessageBox.Show("Zamówienie złożone !", "Informacja");
                     }
 
-                    //await Print(order, title, _transport, _products);
+                    await Print(order, title, _transport, _products, _boxes);
                 }
 
 
@@ -235,7 +254,7 @@ namespace NoweChili.View
 
         }
 
-        private async Task Print(OrderModel order, string _tytul, string _transport, string _products)
+        private async Task Print(OrderModel order, string _tytul, string _transport, string _products, string _boxes)
         {
             try
             {
@@ -248,6 +267,11 @@ namespace NoweChili.View
                 doDruku += _products;
 
                 foreach (var VARIABLE in order.ProductList)
+                {
+                    doDruku += VARIABLE.ToString() + "\r\n";
+                }
+                doDruku += _boxes;
+                foreach (var VARIABLE in order.Boxes)
                 {
                     doDruku += VARIABLE.ToString() + "\r\n";
                 }
@@ -285,6 +309,84 @@ namespace NoweChili.View
         private void LogOutButton_Click(object sender, RoutedEventArgs e)
         {
             user.Logout(this);
+        }
+
+        private void AddBoxButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int amountOfBoxes = Int32.Parse(AmountOfBoxesTextBox.Text);
+                var box = BoxesComboBox.SelectionBoxItem as BoxDbObject;
+
+                for (int i = 0; i < amountOfBoxes; i++)
+                {
+                    BoxList.Add(box);
+                }
+
+                BoxListView.ItemsSource = null;
+                BoxListView.ItemsSource = BoxList;
+                ObliczSume();
+                AmountOfBoxesTextBox.Text = String.Empty;
+            }
+            catch (ArgumentNullException)
+            {
+                var msg = "Wszystkie pola są wymagane";
+
+                MessageBox.Show(msg, "Uwaga");
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Nie znaleziono takiego pudełka", "Uwaga!");
+            }
+            catch (FormatException)
+            {
+                var msg = "Wszystkie pola są wymagane!\nLub wpisałeś zły format...";
+
+                MessageBox.Show(msg, "Uwaga");
+            }
+            catch (DbException ex)
+            {
+                var msg = "Coś nie tak z bazą danych: \n" + ex;
+
+                MessageBox.Show(msg, "Uwaga");
+            }
+            catch (Exception ex)
+            {
+                var msg = "Coś poszło nie tak:  \n" + ex;
+                MessageBox.Show(msg, "Uwaga!");
+            }
+
+
+        }
+
+        private void RemoveBoxButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                BoxList.Remove(box);
+                BoxListView.ItemsSource = null;
+                BoxListView.ItemsSource = BoxList;
+                ObliczSume();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Coś poszło nie tak: \n" + ex, "Uwaga!");
+            }
+            finally
+            {
+                AddBoxButton.IsEnabled = true;
+                RemoveBoxButton.IsEnabled = false;
+            }
+        }
+
+        private void BoxListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            RemoveBoxButton.IsEnabled = true;
+            AddBoxButton.IsEnabled = false;
+            if (e.AddedItems.Count <= 0)
+                return;
+            box = e.AddedItems[0] as BoxDbObject;
         }
     }
 }
